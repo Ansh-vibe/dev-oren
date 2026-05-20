@@ -9,11 +9,11 @@ export function Cursor() {
   }, []);
   return (
     <div
-      className="pointer-events-none fixed z-[100] h-[400px] w-[400px] rounded-full opacity-40 mix-blend-screen transition-transform duration-150 ease-out hidden md:block"
+      className="pointer-events-none fixed z-[100] h-[400px] w-[400px] rounded-full opacity-50 mix-blend-multiply transition-transform duration-150 ease-out hidden md:block"
       style={{
         transform: `translate(${pos.x - 200}px, ${pos.y - 200}px)`,
         background:
-          "radial-gradient(circle, rgba(99,102,241,0.25), transparent 60%)",
+          "radial-gradient(circle, rgba(232,201,122,0.35), transparent 60%)",
       }}
     />
   );

@@ -30,13 +30,13 @@ export function Nav() {
           <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-300 to-amber-600 text-black font-bold text-sm shadow-[0_0_20px_rgba(232,201,122,0.5)]">
             O
           </span>
-          <span className="font-display font-semibold tracking-tight text-white">
+          <span className="font-display font-semibold tracking-tight text-black">
             OREN<span className="text-amber-400">.</span>
           </span>
         </a>
-        <nav className="hidden md:flex items-center gap-7 text-sm text-white/70">
+        <nav className="hidden md:flex items-center gap-7 text-sm text-black/70">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-white transition-colors">
+            <a key={l.href} href={l.href} className="hover:text-black transition-colors">
               {l.label}
             </a>
           ))}
