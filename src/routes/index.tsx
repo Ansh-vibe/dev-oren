@@ -44,7 +44,7 @@ function Index() {
       <Cursor />
       <motion.div
         style={{ scaleX }}
-        className="fixed top-0 left-0 right-0 h-[2px] origin-left bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 z-[60]"
+        className="fixed top-0 left-0 right-0 h-[2px] origin-left bg-gradient-to-r from-amber-500 via-amber-500 to-amber-500 z-[60]"
       />
       <Nav />
       <Hero />
@@ -97,7 +97,7 @@ function Hero() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#contact"
-              className="btn-glow group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black"
+              className="btn-glow group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-black"
             >
               Get Free Consultation
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -163,7 +163,7 @@ function Marquee() {
             key={i}
             className="mx-8 text-xl md:text-2xl font-display font-medium text-white/30 hover:text-white/80 transition-colors"
           >
-            {t} <span className="text-indigo-400/40 mx-3">✦</span>
+            {t} <span className="text-amber-400/40 mx-3">✦</span>
           </span>
         ))}
       </div>
@@ -188,10 +188,10 @@ function About() {
     >
       <div className="grid lg:grid-cols-5 gap-6">
         <div className="lg:col-span-2 glass rounded-3xl p-8 relative overflow-hidden">
-          <div className="absolute -top-20 -right-20 h-60 w-60 rounded-full bg-indigo-500/20 blur-3xl" />
+          <div className="absolute -top-20 -right-20 h-60 w-60 rounded-full bg-amber-500/20 blur-3xl" />
           <div className="relative">
             <div className="flex items-center gap-4 mb-6">
-              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-2xl font-display font-bold">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-2xl font-display font-bold">
                 AV
               </div>
               <div>
@@ -235,13 +235,13 @@ function About() {
               className="glass rounded-2xl p-6 flex gap-5 group hover:bg-white/[0.06] transition-colors"
             >
               <div className="flex flex-col items-center">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-sm font-display font-bold">
+                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-sm font-display font-bold">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                {i < timeline.length - 1 && <div className="w-px flex-1 bg-gradient-to-b from-purple-500/50 to-transparent mt-2" />}
+                {i < timeline.length - 1 && <div className="w-px flex-1 bg-gradient-to-b from-amber-500/50 to-transparent mt-2" />}
               </div>
               <div className="flex-1 pb-2">
-                <div className="text-xs uppercase tracking-widest text-indigo-300 mb-1">{t.y}</div>
+                <div className="text-xs uppercase tracking-widest text-amber-300 mb-1">{t.y}</div>
                 <div className="font-display text-xl font-semibold mb-1">{t.t}</div>
                 <div className="text-white/60">{t.d}</div>
               </div>
@@ -256,10 +256,10 @@ function About() {
 /* ============== VALUES ============== */
 function Values() {
   const values = [
-    { icon: Sparkles, t: "Innovation", d: "We chase the cutting edge so your brand never feels dated.", c: "from-indigo-500 to-blue-500" },
-    { icon: Shield, t: "Trust", d: "Transparent process, honest pricing, code you actually own.", c: "from-purple-500 to-pink-500" },
-    { icon: Heart, t: "Affordability", d: "Startup-friendly pricing without compromising craft.", c: "from-pink-500 to-rose-500" },
-    { icon: TrendingUp, t: "Growth", d: "Every pixel and line of code is built to convert.", c: "from-emerald-500 to-teal-500" },
+    { icon: Sparkles, t: "Innovation", d: "We chase the cutting edge so your brand never feels dated.", c: "from-amber-500 to-amber-500" },
+    { icon: Shield, t: "Trust", d: "Transparent process, honest pricing, code you actually own.", c: "from-amber-500 to-amber-500" },
+    { icon: Heart, t: "Affordability", d: "Startup-friendly pricing without compromising craft.", c: "from-amber-500 to-amber-500" },
+    { icon: TrendingUp, t: "Growth", d: "Every pixel and line of code is built to convert.", c: "from-emerald-500 to-amber-500" },
   ];
   return (
     <Section eyebrow="Our Values" title="What we stand for.">
@@ -316,10 +316,10 @@ function Services() {
             transition={{ duration: 0.5, delay: i * 0.05 }}
             className="group glass rounded-3xl p-7 hover:bg-white/[0.06] hover:-translate-y-1 transition-all relative overflow-hidden"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/0 via-transparent to-purple-500/0 group-hover:from-indigo-500/10 group-hover:to-purple-500/10 transition-all" />
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 via-transparent to-amber-500/0 group-hover:from-amber-500/10 group-hover:to-amber-500/10 transition-all" />
             <div className="relative">
               <div className="flex items-start justify-between mb-5">
-                <div className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-indigo-500 group-hover:to-purple-600 group-hover:border-transparent transition-all">
+                <div className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-amber-500 group-hover:to-amber-600 group-hover:border-transparent transition-all">
                   <s.icon className="h-5 w-5" />
                 </div>
                 <ArrowUpRight className="h-5 w-5 text-white/30 group-hover:text-white group-hover:rotate-45 transition-all" />
@@ -350,7 +350,7 @@ function Process() {
   return (
     <Section id="process" eyebrow="Process" title="From idea to launch in 4 moves.">
       <div className="relative">
-        <div className="hidden lg:block absolute top-12 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
+        <div className="hidden lg:block absolute top-12 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
         <div className="grid lg:grid-cols-4 gap-5">
           {steps.map((s, i) => (
             <motion.div
@@ -362,8 +362,8 @@ function Process() {
               className="relative"
             >
               <div className="relative z-10 h-24 w-24 mx-auto rounded-3xl glass-strong flex items-center justify-center mb-6 group hover:scale-110 transition-transform">
-                <s.icon className="h-9 w-9 text-indigo-300" />
-                <span className="absolute -top-2 -right-2 text-xs font-display font-bold bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full h-7 w-7 flex items-center justify-center">{s.n}</span>
+                <s.icon className="h-9 w-9 text-amber-300" />
+                <span className="absolute -top-2 -right-2 text-xs font-display font-bold bg-gradient-to-br from-amber-500 to-amber-600 rounded-full h-7 w-7 flex items-center justify-center">{s.n}</span>
               </div>
               <div className="text-center">
                 <h3 className="font-display text-xl font-semibold mb-2">{s.t}</h3>
@@ -378,6 +378,10 @@ function Process() {
 }
 
 /* ============== PROJECTS ============== */
+import projectRooftop from "@/assets/project-rooftop.jpg";
+import projectFeast from "@/assets/project-feast.jpg";
+import projectKhadak from "@/assets/project-khadak.jpg";
+
 function Projects() {
   const projects = [
     {
@@ -385,21 +389,21 @@ function Projects() {
       d: "Premium rooftop restaurant booking experience.",
       tags: ["React", "Booking", "UI/UX"],
       url: "https://rooftop-reserve-4.preview.emergentagent.com/",
-      c: "from-orange-500 via-rose-500 to-purple-600",
+      img: projectRooftop,
     },
     {
       n: "Intimate Feast",
       d: "Boutique dining platform with refined storytelling.",
       tags: ["Next.js", "Brand", "Web"],
       url: "https://intimate-feast.preview.emergentagent.com/",
-      c: "from-emerald-500 via-teal-500 to-cyan-600",
+      img: projectFeast,
     },
     {
       n: "Khadak Dining Portal",
       d: "Full dining management portal with smart workflows.",
       tags: ["Portal", "CRM", "Design"],
       url: "https://khadak-dining-portal.preview.emergentagent.com/",
-      c: "from-indigo-500 via-purple-500 to-pink-500",
+      img: projectKhadak,
     },
   ];
   return (
@@ -420,23 +424,26 @@ function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            className="group block glass rounded-3xl overflow-hidden hover:-translate-y-2 transition-all"
+            className="group block glass rounded-3xl overflow-hidden hover:-translate-y-2 hover:border-amber-400/30 transition-all"
           >
-            <div className={`relative aspect-[4/3] bg-gradient-to-br ${p.c} overflow-hidden`}>
-              <div className="absolute inset-0 grid-bg opacity-30" />
-              <div className="absolute inset-6 rounded-2xl bg-black/40 backdrop-blur border border-white/10 p-4 flex flex-col">
-                <div className="flex gap-1.5">
-                  <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
-                </div>
-                <div className="flex-1 flex items-center justify-center">
-                  <div className="text-white font-display text-2xl font-bold opacity-90 group-hover:scale-110 transition-transform">
-                    {p.n}
-                  </div>
-                </div>
+            <div className="relative aspect-[4/3] overflow-hidden bg-black">
+              <img
+                src={p.img}
+                alt={`${p.n} — live website by OREN`}
+                loading="lazy"
+                width={1280}
+                height={960}
+                className="absolute inset-0 h-full w-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+              <div className="absolute top-3 left-3 flex gap-1.5 rounded-full bg-black/50 backdrop-blur px-2.5 py-1.5 border border-white/10">
+                <span className="h-2 w-2 rounded-full bg-red-400/70" />
+                <span className="h-2 w-2 rounded-full bg-amber-300/80" />
+                <span className="h-2 w-2 rounded-full bg-emerald-400/70" />
               </div>
-              <ArrowUpRight className="absolute top-4 right-4 h-5 w-5 text-white/80 group-hover:rotate-45 transition-transform" />
+              <span className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-amber-400/95 text-black text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1">
+                Live <ArrowUpRight className="h-3 w-3" />
+              </span>
             </div>
             <div className="p-6">
               <h3 className="font-display text-xl font-semibold mb-1">{p.n}</h3>
@@ -474,7 +481,7 @@ function WhyUs() {
             transition={{ duration: 0.5, delay: i * 0.08 }}
             className="glass rounded-3xl p-7 hover:bg-white/[0.06] transition-all"
           >
-            <r.icon className="h-7 w-7 text-indigo-300 mb-4" />
+            <r.icon className="h-7 w-7 text-amber-300 mb-4" />
             <div className="text-4xl font-display font-semibold text-gradient-neon">{r.v}</div>
             <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{r.l}</div>
             <h3 className="font-display text-lg font-semibold mt-5">{r.t}</h3>
@@ -500,8 +507,8 @@ function Testimonials() {
   return (
     <Section eyebrow="Testimonials" title="Loved by founders and operators.">
       <div className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#060814] to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#060814] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
         <div className="flex gap-5 animate-marquee">
           {row.map((t, i) => (
             <div key={i} className="min-w-[340px] max-w-[340px] glass rounded-3xl p-6">
@@ -512,7 +519,7 @@ function Testimonials() {
               </div>
               <p className="text-white/80 leading-relaxed">"{t.q}"</p>
               <div className="mt-5 flex items-center gap-3">
-                <div className="h-9 w-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-xs font-bold">
+                <div className="h-9 w-9 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-xs font-bold">
                   {t.n[0]}
                 </div>
                 <div>
@@ -531,12 +538,12 @@ function Testimonials() {
 /* ============== BLOG ============== */
 function Blog() {
   const posts = [
-    { t: "Why Every Startup Needs a Professional Website in 2025", c: "Strategy", g: "from-indigo-500 to-purple-600" },
-    { t: "Top 5 SEO Strategies for Small Businesses", c: "SEO", g: "from-emerald-500 to-teal-600" },
-    { t: "How Instagram Sellers Can Boost Sales with E-commerce", c: "E-commerce", g: "from-pink-500 to-rose-600" },
-    { t: "The Future of Digital Marketing in 2025", c: "Marketing", g: "from-orange-500 to-red-600" },
-    { t: "Why Branding Matters More Than Ever", c: "Brand", g: "from-purple-500 to-pink-600" },
-    { t: "E-commerce Trends Every Business Should Watch", c: "Trends", g: "from-cyan-500 to-blue-600" },
+    { t: "Why Every Startup Needs a Professional Website in 2025", c: "Strategy", g: "from-amber-500 to-amber-600" },
+    { t: "Top 5 SEO Strategies for Small Businesses", c: "SEO", g: "from-emerald-500 to-amber-600" },
+    { t: "How Instagram Sellers Can Boost Sales with E-commerce", c: "E-commerce", g: "from-amber-500 to-amber-600" },
+    { t: "The Future of Digital Marketing in 2025", c: "Marketing", g: "from-amber-500 to-amber-600" },
+    { t: "Why Branding Matters More Than Ever", c: "Brand", g: "from-amber-500 to-amber-600" },
+    { t: "E-commerce Trends Every Business Should Watch", c: "Trends", g: "from-amber-500 to-amber-600" },
   ];
   return (
     <Section eyebrow="Insights" title="Ideas worth shipping." subtitle="Fresh perspectives on building, growing, and shipping in 2026.">
@@ -556,7 +563,7 @@ function Blog() {
               <div className="absolute bottom-4 left-4 text-xs uppercase tracking-widest rounded-full bg-black/40 backdrop-blur px-3 py-1">{p.c}</div>
             </div>
             <div className="p-6">
-              <h3 className="font-display text-lg font-semibold leading-snug group-hover:text-indigo-300 transition-colors">{p.t}</h3>
+              <h3 className="font-display text-lg font-semibold leading-snug group-hover:text-amber-300 transition-colors">{p.t}</h3>
               <div className="mt-4 inline-flex items-center gap-2 text-sm text-white/60">
                 Read article <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </div>
@@ -640,12 +647,12 @@ function Contact() {
               className="block glass rounded-2xl p-5 hover:bg-white/[0.06] transition-colors group"
             >
               <div className="flex items-center gap-4">
-                <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
                   <c.icon className="h-5 w-5" />
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-widest text-white/50">{c.l}</div>
-                  <div className="font-medium group-hover:text-indigo-300 transition-colors">{c.v}</div>
+                  <div className="font-medium group-hover:text-amber-300 transition-colors">{c.v}</div>
                 </div>
               </div>
             </a>
@@ -684,12 +691,12 @@ function Contact() {
             <textarea
               rows={5}
               placeholder="Tell us about your vision, timeline, and budget…"
-              className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 transition-all"
+              className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/30 transition-all"
             />
           </div>
           <button
             type="submit"
-            className="btn-glow w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white text-black font-semibold py-3.5"
+            className="btn-glow w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-300 to-amber-500 text-black font-semibold py-3.5"
           >
             {sent ? (<><Check className="h-4 w-4" /> We&apos;ll be in touch shortly</>) : (<>Send Message <ArrowRight className="h-4 w-4" /></>)}
           </button>
@@ -705,7 +712,7 @@ function Input({ label, ...props }: { label: string } & React.InputHTMLAttribute
       <label className="text-xs uppercase tracking-widest text-white/50 mb-2 block">{label}</label>
       <input
         {...props}
-        className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 transition-all"
+        className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/30 transition-all"
       />
     </div>
   );
@@ -719,8 +726,8 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="h-9 w-9 rounded-lg bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-bold">O</span>
-              <span className="font-display text-xl font-semibold">OREN<span className="text-indigo-400">.</span></span>
+              <span className="h-9 w-9 rounded-lg bg-gradient-to-br from-amber-500 via-amber-500 to-amber-500 flex items-center justify-center font-bold">O</span>
+              <span className="font-display text-xl font-semibold">OREN<span className="text-amber-400">.</span></span>
             </div>
             <p className="text-white/60 max-w-md">
               Building digital experiences that drive growth — for startups,
