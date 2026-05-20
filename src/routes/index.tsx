@@ -97,7 +97,7 @@ function Hero() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#contact"
-              className="btn-glow group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black"
+              className="btn-glow group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-300 to-amber-500 px-6 py-3 text-sm font-semibold text-black"
             >
               Get Free Consultation
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -507,8 +507,8 @@ function Testimonials() {
   return (
     <Section eyebrow="Testimonials" title="Loved by founders and operators.">
       <div className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#060814] to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#060814] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
         <div className="flex gap-5 animate-marquee">
           {row.map((t, i) => (
             <div key={i} className="min-w-[340px] max-w-[340px] glass rounded-3xl p-6">
@@ -696,7 +696,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="btn-glow w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white text-black font-semibold py-3.5"
+            className="btn-glow w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-300 to-amber-500 text-black font-semibold py-3.5"
           >
             {sent ? (<><Check className="h-4 w-4" /> We&apos;ll be in touch shortly</>) : (<>Send Message <ArrowRight className="h-4 w-4" /></>)}
           </button>
