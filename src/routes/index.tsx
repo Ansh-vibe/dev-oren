@@ -191,8 +191,13 @@ function About() {
           <div className="absolute -top-20 -right-20 h-60 w-60 rounded-full bg-amber-500/20 blur-3xl" />
           <div className="relative">
             <div className="flex items-center gap-4 mb-6">
-              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-2xl font-display font-bold">
-                AV
+              <div className="relative h-20 w-20 shrink-0 rounded-full p-[2px] bg-gradient-to-br from-amber-400 to-amber-600 shadow-[0_0_30px_rgba(232,201,122,0.45)]">
+                <img
+                  src={anshFounder}
+                  alt="Ansh Vishwakarma, Founder of OREN"
+                  className="h-full w-full rounded-full object-cover object-top ring-2 ring-white"
+                  loading="lazy"
+                />
               </div>
               <div>
                 <div className="font-display text-xl font-semibold">Ansh Vishwakarma</div>
@@ -381,6 +386,7 @@ function Process() {
 import projectRooftop from "@/assets/project-rooftop.jpg";
 import projectFeast from "@/assets/project-feast.jpg";
 import projectKhadak from "@/assets/project-khadak.jpg";
+import anshFounder from "@/assets/ansh-founder.jpg";
 
 function Projects() {
   const projects = [
