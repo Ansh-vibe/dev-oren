@@ -35,25 +35,28 @@
 
 :root {
   --radius: 0.875rem;
-  --background: oklch(0.13 0.03 265);
-  --foreground: oklch(0.98 0.005 250);
-  --card: oklch(0.18 0.04 265);
-  --card-foreground: oklch(0.98 0.005 250);
-  --popover: oklch(0.18 0.04 265);
-  --popover-foreground: oklch(0.98 0.005 250);
-  --primary: oklch(0.72 0.18 260);
-  --primary-foreground: oklch(0.1 0.02 265);
-  --secondary: oklch(0.25 0.05 280);
-  --secondary-foreground: oklch(0.98 0.005 250);
-  --muted: oklch(0.22 0.03 265);
-  --muted-foreground: oklch(0.72 0.03 260);
-  --accent: oklch(0.65 0.22 300);
-  --accent-foreground: oklch(0.98 0.005 250);
+  --background: oklch(0.08 0.005 80);
+  --foreground: oklch(0.98 0.01 85);
+  --card: oklch(0.13 0.01 80);
+  --card-foreground: oklch(0.98 0.01 85);
+  --popover: oklch(0.13 0.01 80);
+  --popover-foreground: oklch(0.98 0.01 85);
+  --primary: oklch(0.82 0.14 85);
+  --primary-foreground: oklch(0.12 0.01 80);
+  --secondary: oklch(0.2 0.02 80);
+  --secondary-foreground: oklch(0.98 0.01 85);
+  --muted: oklch(0.18 0.01 80);
+  --muted-foreground: oklch(0.72 0.04 85);
+  --accent: oklch(0.78 0.16 80);
+  --accent-foreground: oklch(0.12 0.01 80);
   --destructive: oklch(0.65 0.24 25);
   --destructive-foreground: oklch(0.98 0.005 250);
   --border: oklch(1 0 0 / 8%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.72 0.18 260);
+  --ring: oklch(0.82 0.14 85);
+  --gold: #e8c97a;
+  --gold-bright: #f5d98a;
+  --gold-deep: #b8860b;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
