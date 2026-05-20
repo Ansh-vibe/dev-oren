@@ -43,7 +43,7 @@ export function Nav() {
         </nav>
         <a
           href="#contact"
-          className="btn-glow rounded-full bg-white text-black text-sm font-medium px-4 py-2"
+          className="btn-glow rounded-full bg-gradient-to-r from-amber-300 to-amber-500 text-black text-sm font-medium px-4 py-2"
         >
           Get Started
         </a>
