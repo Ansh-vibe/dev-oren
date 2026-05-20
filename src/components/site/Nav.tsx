@@ -27,7 +27,7 @@ export function Nav() {
     >
       <div className="flex items-center justify-between px-5 py-3">
         <a href="#top" className="flex items-center gap-2 group">
-          <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-500 via-amber-500 to-amber-500 text-white font-bold text-sm shadow-[0_0_20px_rgba(168,85,247,0.5)]">
+          <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-300 to-amber-600 text-black font-bold text-sm shadow-[0_0_20px_rgba(232,201,122,0.5)]">
             O
           </span>
           <span className="font-display font-semibold tracking-tight text-white">
