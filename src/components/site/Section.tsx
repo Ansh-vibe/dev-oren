@@ -28,8 +28,8 @@ export function Section({
             className="max-w-3xl mb-16"
           >
             {eyebrow && (
-              <div className="inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs uppercase tracking-[0.18em] text-indigo-300 mb-5">
-                <span className="h-1.5 w-1.5 rounded-full bg-indigo-400 animate-pulse" />
+              <div className="inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs uppercase tracking-[0.18em] text-amber-300 mb-5">
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse" />
                 {eyebrow}
               </div>
             )}

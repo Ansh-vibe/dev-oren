@@ -27,11 +27,11 @@ export function Nav() {
     >
       <div className="flex items-center justify-between px-5 py-3">
         <a href="#top" className="flex items-center gap-2 group">
-          <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm shadow-[0_0_20px_rgba(168,85,247,0.5)]">
+          <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-500 via-amber-500 to-amber-500 text-white font-bold text-sm shadow-[0_0_20px_rgba(168,85,247,0.5)]">
             O
           </span>
           <span className="font-display font-semibold tracking-tight text-white">
-            OREN<span className="text-indigo-400">.</span>
+            OREN<span className="text-amber-400">.</span>
           </span>
         </a>
         <nav className="hidden md:flex items-center gap-7 text-sm text-white/70">
