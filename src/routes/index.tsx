@@ -507,8 +507,8 @@ function Testimonials() {
   return (
     <Section eyebrow="Testimonials" title="Loved by founders and operators.">
       <div className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#ffffff] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#ffffff] to-transparent z-10" />
         <div className="flex gap-5 animate-marquee">
           {row.map((t, i) => (
             <div key={i} className="min-w-[340px] max-w-[340px] glass rounded-3xl p-6">
