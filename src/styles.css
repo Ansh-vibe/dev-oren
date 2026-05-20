@@ -65,50 +65,50 @@
   * { border-color: var(--color-border); }
   html { scroll-behavior: smooth; }
   body {
-    background-color: #0a0a0a;
-    color: var(--color-foreground);
+    background-color: #ffffff;
+    color: #000000;
     font-family: "Inter", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
-  h1, h2, h3, h4 { font-family: "Space Grotesk", system-ui, sans-serif; letter-spacing: -0.02em; }
-  ::selection { background: rgba(232, 201, 122, 0.35); color: #fff; }
+  h1, h2, h3, h4 { font-family: "Space Grotesk", system-ui, sans-serif; letter-spacing: -0.02em; color: #000; }
+  ::selection { background: rgba(232, 201, 122, 0.45); color: #000; }
 }
 
 @layer utilities {
   .glass {
-    background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+    background: linear-gradient(135deg, rgba(0,0,0,0.03), rgba(0,0,0,0.01));
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(232, 201, 122, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.08);
   }
   .glass-strong {
-    background: linear-gradient(135deg, rgba(232, 201, 122, 0.08), rgba(0,0,0,0.4));
+    background: linear-gradient(135deg, rgba(232, 201, 122, 0.18), rgba(255,255,255,0.7));
     backdrop-filter: blur(24px);
-    border: 1px solid rgba(232, 201, 122, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.12);
   }
   .text-gradient {
-    background: linear-gradient(135deg, #ffffff 0%, #f5e9c8 60%, #e8c97a 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 60%, #3a2a00 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   .text-gradient-neon {
-    background: linear-gradient(135deg, #f5d98a 0%, #e8c97a 45%, #b8860b 100%);
+    background: linear-gradient(135deg, #b8860b 0%, #8a6508 45%, #000000 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   .grid-bg {
     background-image:
-      linear-gradient(rgba(232, 201, 122, 0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(232, 201, 122, 0.06) 1px, transparent 1px);
+      linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
     background-size: 64px 64px;
   }
   .aurora {
     position: absolute; inset: 0; overflow: hidden; pointer-events: none;
   }
   .aurora::before, .aurora::after {
-    content: ""; position: absolute; border-radius: 9999px; filter: blur(140px); opacity: 0.35;
+    content: ""; position: absolute; border-radius: 9999px; filter: blur(140px); opacity: 0.45;
   }
   .aurora::before {
     width: 600px; height: 600px; top: -200px; left: -100px;
@@ -117,7 +117,7 @@
   }
   .aurora::after {
     width: 700px; height: 700px; bottom: -250px; right: -150px;
-    background: radial-gradient(circle, #b8860b, transparent 70%);
+    background: radial-gradient(circle, #f5d98a, transparent 70%);
     animation: float 26s ease-in-out infinite reverse;
   }
   @keyframes float {
@@ -130,11 +130,11 @@
   }
   .animate-marquee { animation: marquee 35s linear infinite; }
   .btn-glow {
-    box-shadow: 0 0 0 1px rgba(232, 201, 122, 0.25), 0 10px 40px -10px rgba(232, 201, 122, 0.45);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 10px 40px -10px rgba(232, 201, 122, 0.55);
     transition: all 0.3s ease;
   }
   .btn-glow:hover {
-    box-shadow: 0 0 0 1px rgba(232, 201, 122, 0.45), 0 20px 60px -10px rgba(232, 201, 122, 0.7);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25), 0 20px 60px -10px rgba(232, 201, 122, 0.75);
     transform: translateY(-2px);
   }
 }
