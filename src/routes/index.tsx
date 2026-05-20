@@ -39,7 +39,7 @@ function Index() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
   return (
-    <div id="top" className="relative min-h-screen text-white">
+    <div id="top" className="relative min-h-screen text-black">
       <Background />
       <Cursor />
       <motion.div
@@ -76,7 +76,7 @@ function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-5xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-white/70 mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-black/70 mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
             Now accepting Q3 2026 projects
             <ArrowUpRight className="h-3 w-3" />
@@ -89,7 +89,7 @@ function Hero() {
             <br />
             <span className="text-gradient">Growth.</span>
           </h1>
-          <p className="mt-8 mx-auto max-w-2xl text-lg md:text-xl text-white/60 leading-relaxed">
+          <p className="mt-8 mx-auto max-w-2xl text-lg md:text-xl text-black/60 leading-relaxed">
             OREN Website Development Services helps startups, businesses, and
             creators build modern websites, CRM systems, booking platforms, and
             digital brands that scale.
@@ -104,16 +104,16 @@ function Hero() {
             </a>
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-black hover:bg-black/10 transition-colors"
             >
               View Projects
             </a>
           </div>
-          <div className="mt-8 flex items-center justify-center gap-3 text-sm text-white/50">
-            <div className="h-px w-12 bg-white/20" />
-            Founded by <span className="text-white/90">Ansh Vishwakarma</span> —
+          <div className="mt-8 flex items-center justify-center gap-3 text-sm text-black/50">
+            <div className="h-px w-12 bg-black/20" />
+            Founded by <span className="text-black/90">Ansh Vishwakarma</span> —
             Front-End Developer &amp; Startup Builder
-            <div className="h-px w-12 bg-white/20" />
+            <div className="h-px w-12 bg-black/20" />
           </div>
         </motion.div>
 
@@ -132,12 +132,12 @@ function Hero() {
           ].map((s) => (
             <div
               key={s.l}
-              className="glass rounded-2xl p-6 text-center hover:bg-white/[0.06] transition-colors"
+              className="glass rounded-2xl p-6 text-center hover:bg-black/[0.06] transition-colors"
             >
               <div className="text-4xl md:text-5xl font-display font-semibold text-gradient-neon">
                 {s.v}
               </div>
-              <div className="mt-2 text-xs uppercase tracking-widest text-white/50">
+              <div className="mt-2 text-xs uppercase tracking-widest text-black/50">
                 {s.l}
               </div>
             </div>
@@ -156,12 +156,12 @@ function Marquee() {
     "Tailwind CSS", "GSAP",
   ];
   return (
-    <div className="relative py-10 border-y border-white/5 overflow-hidden">
+    <div className="relative py-10 border-y border-black/5 overflow-hidden">
       <div className="flex animate-marquee whitespace-nowrap">
         {[...items, ...items].map((t, i) => (
           <span
             key={i}
-            className="mx-8 text-xl md:text-2xl font-display font-medium text-white/30 hover:text-white/80 transition-colors"
+            className="mx-8 text-xl md:text-2xl font-display font-medium text-black/30 hover:text-black/80 transition-colors"
           >
             {t} <span className="text-amber-400/40 mx-3">✦</span>
           </span>
@@ -196,10 +196,10 @@ function About() {
               </div>
               <div>
                 <div className="font-display text-xl font-semibold">Ansh Vishwakarma</div>
-                <div className="text-sm text-white/50">Founder &amp; Front-End Developer</div>
+                <div className="text-sm text-black/50">Founder &amp; Front-End Developer</div>
               </div>
             </div>
-            <p className="text-white/60 leading-relaxed mb-6">
+            <p className="text-black/60 leading-relaxed mb-6">
               A BCA student entrepreneur turning freelance hustle into a
               digital empire — obsessed with shipping fast, building trust,
               and creating products that move the needle for clients.
@@ -210,14 +210,14 @@ function About() {
                 "SEO", "Digital Marketing", "Client Strategy", "Social Media",
                 "Analytics", "Local Growth",
               ].map((s) => (
-                <span key={s} className="text-xs rounded-full glass px-3 py-1 text-white/70">{s}</span>
+                <span key={s} className="text-xs rounded-full glass px-3 py-1 text-black/70">{s}</span>
               ))}
             </div>
             <div className="mt-6 flex gap-3">
-              <a href="https://github.com/Ansh-vibe" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm rounded-full glass px-4 py-2 hover:bg-white/10">
+              <a href="https://github.com/Ansh-vibe" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm rounded-full glass px-4 py-2 hover:bg-black/10">
                 <Github className="h-4 w-4" /> GitHub
               </a>
-              <a href="https://www.linkedin.com/in/v-ansh/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm rounded-full glass px-4 py-2 hover:bg-white/10">
+              <a href="https://www.linkedin.com/in/v-ansh/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm rounded-full glass px-4 py-2 hover:bg-black/10">
                 <Linkedin className="h-4 w-4" /> LinkedIn
               </a>
             </div>
@@ -232,7 +232,7 @@ function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass rounded-2xl p-6 flex gap-5 group hover:bg-white/[0.06] transition-colors"
+              className="glass rounded-2xl p-6 flex gap-5 group hover:bg-black/[0.06] transition-colors"
             >
               <div className="flex flex-col items-center">
                 <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-sm font-display font-bold">
@@ -243,7 +243,7 @@ function About() {
               <div className="flex-1 pb-2">
                 <div className="text-xs uppercase tracking-widest text-amber-300 mb-1">{t.y}</div>
                 <div className="font-display text-xl font-semibold mb-1">{t.t}</div>
-                <div className="text-white/60">{t.d}</div>
+                <div className="text-black/60">{t.d}</div>
               </div>
             </motion.div>
           ))}
@@ -275,10 +275,10 @@ function Values() {
           >
             <div className={`absolute -top-16 -right-16 h-40 w-40 rounded-full bg-gradient-to-br ${v.c} opacity-20 blur-2xl group-hover:opacity-40 transition-opacity`} />
             <div className={`relative h-12 w-12 rounded-2xl bg-gradient-to-br ${v.c} flex items-center justify-center mb-5`}>
-              <v.icon className="h-6 w-6 text-white" />
+              <v.icon className="h-6 w-6 text-black" />
             </div>
             <h3 className="font-display text-2xl font-semibold mb-2">{v.t}</h3>
-            <p className="text-white/60 text-sm">{v.d}</p>
+            <p className="text-black/60 text-sm">{v.d}</p>
           </motion.div>
         ))}
       </div>
@@ -314,21 +314,21 @@ function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.05 }}
-            className="group glass rounded-3xl p-7 hover:bg-white/[0.06] hover:-translate-y-1 transition-all relative overflow-hidden"
+            className="group glass rounded-3xl p-7 hover:bg-black/[0.06] hover:-translate-y-1 transition-all relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 via-transparent to-amber-500/0 group-hover:from-amber-500/10 group-hover:to-amber-500/10 transition-all" />
             <div className="relative">
               <div className="flex items-start justify-between mb-5">
-                <div className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-amber-500 group-hover:to-amber-600 group-hover:border-transparent transition-all">
+                <div className="h-12 w-12 rounded-2xl bg-black/5 border border-black/10 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-amber-500 group-hover:to-amber-600 group-hover:border-transparent transition-all">
                   <s.icon className="h-5 w-5" />
                 </div>
-                <ArrowUpRight className="h-5 w-5 text-white/30 group-hover:text-white group-hover:rotate-45 transition-all" />
+                <ArrowUpRight className="h-5 w-5 text-black/30 group-hover:text-black group-hover:rotate-45 transition-all" />
               </div>
               <h3 className="font-display text-xl font-semibold mb-2">{s.t}</h3>
-              <p className="text-white/60 text-sm mb-5">{s.d}</p>
+              <p className="text-black/60 text-sm mb-5">{s.d}</p>
               <div className="flex flex-wrap gap-1.5">
                 {s.tech.map((t) => (
-                  <span key={t} className="text-[10px] uppercase tracking-wider rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-white/60">{t}</span>
+                  <span key={t} className="text-[10px] uppercase tracking-wider rounded-full bg-black/5 border border-black/10 px-2.5 py-1 text-black/60">{t}</span>
                 ))}
               </div>
             </div>
@@ -367,7 +367,7 @@ function Process() {
               </div>
               <div className="text-center">
                 <h3 className="font-display text-xl font-semibold mb-2">{s.t}</h3>
-                <p className="text-white/60 text-sm">{s.d}</p>
+                <p className="text-black/60 text-sm">{s.d}</p>
               </div>
             </motion.div>
           ))}
@@ -436,7 +436,7 @@ function Projects() {
                 className="absolute inset-0 h-full w-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-              <div className="absolute top-3 left-3 flex gap-1.5 rounded-full bg-black/50 backdrop-blur px-2.5 py-1.5 border border-white/10">
+              <div className="absolute top-3 left-3 flex gap-1.5 rounded-full bg-black/50 backdrop-blur px-2.5 py-1.5 border border-black/10">
                 <span className="h-2 w-2 rounded-full bg-red-400/70" />
                 <span className="h-2 w-2 rounded-full bg-amber-300/80" />
                 <span className="h-2 w-2 rounded-full bg-emerald-400/70" />
@@ -447,10 +447,10 @@ function Projects() {
             </div>
             <div className="p-6">
               <h3 className="font-display text-xl font-semibold mb-1">{p.n}</h3>
-              <p className="text-white/60 text-sm mb-4">{p.d}</p>
+              <p className="text-black/60 text-sm mb-4">{p.d}</p>
               <div className="flex flex-wrap gap-1.5">
                 {p.tags.map((t) => (
-                  <span key={t} className="text-[10px] uppercase tracking-wider rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-white/60">{t}</span>
+                  <span key={t} className="text-[10px] uppercase tracking-wider rounded-full bg-black/5 border border-black/10 px-2.5 py-1 text-black/60">{t}</span>
                 ))}
               </div>
             </div>
@@ -479,13 +479,13 @@ function WhyUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.08 }}
-            className="glass rounded-3xl p-7 hover:bg-white/[0.06] transition-all"
+            className="glass rounded-3xl p-7 hover:bg-black/[0.06] transition-all"
           >
             <r.icon className="h-7 w-7 text-amber-300 mb-4" />
             <div className="text-4xl font-display font-semibold text-gradient-neon">{r.v}</div>
-            <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{r.l}</div>
+            <div className="text-xs uppercase tracking-widest text-black/50 mt-1">{r.l}</div>
             <h3 className="font-display text-lg font-semibold mt-5">{r.t}</h3>
-            <p className="text-white/60 text-sm mt-1">{r.d}</p>
+            <p className="text-black/60 text-sm mt-1">{r.d}</p>
           </motion.div>
         ))}
       </div>
@@ -517,14 +517,14 @@ function Testimonials() {
                   <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="text-white/80 leading-relaxed">"{t.q}"</p>
+              <p className="text-black/80 leading-relaxed">"{t.q}"</p>
               <div className="mt-5 flex items-center gap-3">
                 <div className="h-9 w-9 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-xs font-bold">
                   {t.n[0]}
                 </div>
                 <div>
                   <div className="text-sm font-semibold">{t.n}</div>
-                  <div className="text-xs text-white/50">{t.r}</div>
+                  <div className="text-xs text-black/50">{t.r}</div>
                 </div>
               </div>
             </div>
@@ -564,7 +564,7 @@ function Blog() {
             </div>
             <div className="p-6">
               <h3 className="font-display text-lg font-semibold leading-snug group-hover:text-amber-300 transition-colors">{p.t}</h3>
-              <div className="mt-4 inline-flex items-center gap-2 text-sm text-white/60">
+              <div className="mt-4 inline-flex items-center gap-2 text-sm text-black/60">
                 Read article <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
@@ -601,10 +601,10 @@ function FAQ() {
             >
               <button
                 onClick={() => setOpen(isOpen ? null : i)}
-                className="w-full flex items-center justify-between gap-4 p-6 text-left hover:bg-white/[0.04] transition-colors"
+                className="w-full flex items-center justify-between gap-4 p-6 text-left hover:bg-black/[0.04] transition-colors"
               >
                 <span className="font-display text-lg font-medium">{it.q}</span>
-                <span className="h-8 w-8 shrink-0 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                <span className="h-8 w-8 shrink-0 rounded-full bg-black/5 border border-black/10 flex items-center justify-center">
                   {isOpen ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
                 </span>
               </button>
@@ -614,7 +614,7 @@ function FAQ() {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <div className="px-6 pb-6 text-white/60">{it.a}</div>
+                <div className="px-6 pb-6 text-black/60">{it.a}</div>
               </motion.div>
             </motion.div>
           );
@@ -644,14 +644,14 @@ function Contact() {
             <a
               key={c.l}
               href={c.href}
-              className="block glass rounded-2xl p-5 hover:bg-white/[0.06] transition-colors group"
+              className="block glass rounded-2xl p-5 hover:bg-black/[0.06] transition-colors group"
             >
               <div className="flex items-center gap-4">
                 <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
                   <c.icon className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-white/50">{c.l}</div>
+                  <div className="text-xs uppercase tracking-widest text-black/50">{c.l}</div>
                   <div className="font-medium group-hover:text-amber-300 transition-colors">{c.v}</div>
                 </div>
               </div>
@@ -671,7 +671,7 @@ function Contact() {
               <ArrowUpRight className="h-5 w-5 text-emerald-300" />
             </div>
           </a>
-          <div className="text-xs text-white/40 px-2">⚡ Response within 24 hours</div>
+          <div className="text-xs text-black/40 px-2">⚡ Response within 24 hours</div>
         </div>
 
         <form
@@ -687,11 +687,11 @@ function Contact() {
           </div>
           <Input label="Project type" placeholder="Website / CRM / Branding…" />
           <div>
-            <label className="text-xs uppercase tracking-widest text-white/50 mb-2 block">Project details</label>
+            <label className="text-xs uppercase tracking-widest text-black/50 mb-2 block">Project details</label>
             <textarea
               rows={5}
               placeholder="Tell us about your vision, timeline, and budget…"
-              className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/30 transition-all"
+              className="w-full rounded-xl bg-black/5 border border-black/10 px-4 py-3 text-black placeholder:text-black/30 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/30 transition-all"
             />
           </div>
           <button
@@ -709,10 +709,10 @@ function Contact() {
 function Input({ label, ...props }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-widest text-white/50 mb-2 block">{label}</label>
+      <label className="text-xs uppercase tracking-widest text-black/50 mb-2 block">{label}</label>
       <input
         {...props}
-        className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/30 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/30 transition-all"
+        className="w-full rounded-xl bg-black/5 border border-black/10 px-4 py-3 text-black placeholder:text-black/30 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/30 transition-all"
       />
     </div>
   );
@@ -721,7 +721,7 @@ function Input({ label, ...props }: { label: string } & React.InputHTMLAttribute
 /* ============== FOOTER ============== */
 function Footer() {
   return (
-    <footer className="relative border-t border-white/5 mt-10">
+    <footer className="relative border-t border-black/5 mt-10">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
@@ -729,39 +729,39 @@ function Footer() {
               <span className="h-9 w-9 rounded-lg bg-gradient-to-br from-amber-500 via-amber-500 to-amber-500 flex items-center justify-center font-bold">O</span>
               <span className="font-display text-xl font-semibold">OREN<span className="text-amber-400">.</span></span>
             </div>
-            <p className="text-white/60 max-w-md">
+            <p className="text-black/60 max-w-md">
               Building digital experiences that drive growth — for startups,
               businesses, and creators ready to scale.
             </p>
             <div className="mt-6 flex gap-3">
-              <a href="https://github.com/Ansh-vibe" target="_blank" rel="noreferrer" className="h-10 w-10 rounded-xl glass flex items-center justify-center hover:bg-white/10 transition-colors">
+              <a href="https://github.com/Ansh-vibe" target="_blank" rel="noreferrer" className="h-10 w-10 rounded-xl glass flex items-center justify-center hover:bg-black/10 transition-colors">
                 <Github className="h-4 w-4" />
               </a>
-              <a href="https://www.linkedin.com/in/v-ansh/" target="_blank" rel="noreferrer" className="h-10 w-10 rounded-xl glass flex items-center justify-center hover:bg-white/10 transition-colors">
+              <a href="https://www.linkedin.com/in/v-ansh/" target="_blank" rel="noreferrer" className="h-10 w-10 rounded-xl glass flex items-center justify-center hover:bg-black/10 transition-colors">
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a href="mailto:info.oren01@gmail.com" className="h-10 w-10 rounded-xl glass flex items-center justify-center hover:bg-white/10 transition-colors">
+              <a href="mailto:info.oren01@gmail.com" className="h-10 w-10 rounded-xl glass flex items-center justify-center hover:bg-black/10 transition-colors">
                 <Mail className="h-4 w-4" />
               </a>
             </div>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-widest text-white/40 mb-4">Navigate</div>
-            <ul className="space-y-2 text-white/70">
-              <li><a href="#about" className="hover:text-white">About</a></li>
-              <li><a href="#services" className="hover:text-white">Services</a></li>
-              <li><a href="#projects" className="hover:text-white">Projects</a></li>
-              <li><a href="#contact" className="hover:text-white">Contact</a></li>
+            <div className="text-xs uppercase tracking-widest text-black/40 mb-4">Navigate</div>
+            <ul className="space-y-2 text-black/70">
+              <li><a href="#about" className="hover:text-black">About</a></li>
+              <li><a href="#services" className="hover:text-black">Services</a></li>
+              <li><a href="#projects" className="hover:text-black">Projects</a></li>
+              <li><a href="#contact" className="hover:text-black">Contact</a></li>
             </ul>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-widest text-white/40 mb-4">Founder</div>
-            <div className="text-white/80 font-medium">Ansh Vishwakarma</div>
-            <div className="text-white/50 text-sm">Founder &amp; Front-End Developer</div>
-            <div className="text-white/50 text-sm mt-3">Kanpur, UP, India</div>
+            <div className="text-xs uppercase tracking-widest text-black/40 mb-4">Founder</div>
+            <div className="text-black/80 font-medium">Ansh Vishwakarma</div>
+            <div className="text-black/50 text-sm">Founder &amp; Front-End Developer</div>
+            <div className="text-black/50 text-sm mt-3">Kanpur, UP, India</div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-white/40">
+        <div className="mt-12 pt-8 border-t border-black/5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-black/40">
           <div>© 2026 OREN Website Development Services. All rights reserved.</div>
           <div>Crafted with passion in India.</div>
         </div>

@@ -39,7 +39,7 @@ export function Section({
               </h2>
             )}
             {subtitle && (
-              <p className="mt-5 text-lg text-white/60 max-w-2xl">{subtitle}</p>
+              <p className="mt-5 text-lg text-black/60 max-w-2xl">{subtitle}</p>
             )}
           </motion.div>
         )}
