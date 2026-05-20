@@ -378,6 +378,10 @@ function Process() {
 }
 
 /* ============== PROJECTS ============== */
+import projectRooftop from "@/assets/project-rooftop.jpg";
+import projectFeast from "@/assets/project-feast.jpg";
+import projectKhadak from "@/assets/project-khadak.jpg";
+
 function Projects() {
   const projects = [
     {
@@ -385,21 +389,21 @@ function Projects() {
       d: "Premium rooftop restaurant booking experience.",
       tags: ["React", "Booking", "UI/UX"],
       url: "https://rooftop-reserve-4.preview.emergentagent.com/",
-      c: "from-amber-500 via-amber-500 to-amber-600",
+      img: projectRooftop,
     },
     {
       n: "Intimate Feast",
       d: "Boutique dining platform with refined storytelling.",
       tags: ["Next.js", "Brand", "Web"],
       url: "https://intimate-feast.preview.emergentagent.com/",
-      c: "from-emerald-500 via-amber-500 to-amber-600",
+      img: projectFeast,
     },
     {
       n: "Khadak Dining Portal",
       d: "Full dining management portal with smart workflows.",
       tags: ["Portal", "CRM", "Design"],
       url: "https://khadak-dining-portal.preview.emergentagent.com/",
-      c: "from-amber-500 via-amber-500 to-amber-500",
+      img: projectKhadak,
     },
   ];
   return (
@@ -420,23 +424,26 @@ function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            className="group block glass rounded-3xl overflow-hidden hover:-translate-y-2 transition-all"
+            className="group block glass rounded-3xl overflow-hidden hover:-translate-y-2 hover:border-amber-400/30 transition-all"
           >
-            <div className={`relative aspect-[4/3] bg-gradient-to-br ${p.c} overflow-hidden`}>
-              <div className="absolute inset-0 grid-bg opacity-30" />
-              <div className="absolute inset-6 rounded-2xl bg-black/40 backdrop-blur border border-white/10 p-4 flex flex-col">
-                <div className="flex gap-1.5">
-                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
-                </div>
-                <div className="flex-1 flex items-center justify-center">
-                  <div className="text-white font-display text-2xl font-bold opacity-90 group-hover:scale-110 transition-transform">
-                    {p.n}
-                  </div>
-                </div>
+            <div className="relative aspect-[4/3] overflow-hidden bg-black">
+              <img
+                src={p.img}
+                alt={`${p.n} — live website by OREN`}
+                loading="lazy"
+                width={1280}
+                height={960}
+                className="absolute inset-0 h-full w-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+              <div className="absolute top-3 left-3 flex gap-1.5 rounded-full bg-black/50 backdrop-blur px-2.5 py-1.5 border border-white/10">
+                <span className="h-2 w-2 rounded-full bg-red-400/70" />
+                <span className="h-2 w-2 rounded-full bg-amber-300/80" />
+                <span className="h-2 w-2 rounded-full bg-emerald-400/70" />
               </div>
-              <ArrowUpRight className="absolute top-4 right-4 h-5 w-5 text-white/80 group-hover:rotate-45 transition-transform" />
+              <span className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-amber-400/95 text-black text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1">
+                Live <ArrowUpRight className="h-3 w-3" />
+              </span>
             </div>
             <div className="p-6">
               <h3 className="font-display text-xl font-semibold mb-1">{p.n}</h3>
